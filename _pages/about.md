@@ -4,10 +4,10 @@ title: About Me
 permalink: /about/
 ---
 
-This is where you put the contents of your *About* page. Like all your pages, it's in [Markdown](https://guides.github.com/features/mastering-markdown/) format.
+Personal blog of [Thomas Sandmann](https://www.linkedin.com/in/thomas-sandmann/), a Computational Biologist working at a biotechnology company in South San Francisco, California, USA. I am passionate and opinionated about many things, including drug discovery, genetics, teaching and learning new things or statistical methods. 
 
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
+The opinions expressed here are solely my own and do not express the views or opinions of my employer [^1].
 
 
 
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
+[^1]: [Denali Therapeutics](https://denalitherapeutics.com/)
