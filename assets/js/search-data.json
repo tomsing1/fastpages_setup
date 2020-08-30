@@ -14,15 +14,6 @@
     
   
     
-        ,"post2": {
-            "title": "Performance",
-            "content": "Assessing regression models in R . R has unmatched abilities to fit, examine and visualize statistical models. . Today, I noticed the performance R package, which provides a unified interface to assess model fit and quality for many different regression models. . It is part of a growing set of packages under the easystats umbrella - a suite of R packages designed to make the use of advanced statistical techniques easy. . performance includes functions to report many different metrics, including various flavours of R-squared, Intraclass Correlation Coefficients (ICC) as well as checks for violations of assumptions such as overdispersion, zero-inflation or singular model fits. . And if you are looking for a one-stop-shop, search no more: . model &lt;- lm(mpg ~ wt * cyl + gear, data = mtcars) check_model(model) . . Check out the performance package’s website to learn more! .",
-            "url": "https://tomsing1.github.io/fastpages_setup/2020/03/15/performance.html",
-            "relUrl": "/2020/03/15/performance.html",
-            "date": " • Mar 15, 2020"
-        }
-        
-    
   
     
         ,"post3": {
