@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://tomsing1.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://tomsing1.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-08-29T23:11:42-05:00</updated><id>https://tomsing1.github.io/blog/feed.xml</id><title type="html">Thomas Sandmann’s blog</title><entry><title type="html">vtree: Visualizing nested relationships</title><link href="https://tomsing1.github.io/blog/r/2020/08/29/vtree.html" rel="alternate" type="text/html" title="vtree: Visualizing nested relationships" /><published>2020-08-29T00:00:00-05:00</published><updated>2020-08-29T00:00:00-05:00</updated><id>https://tomsing1.github.io/blog/r/2020/08/29/vtree</id><content type="html" xml:base="https://tomsing1.github.io/blog/r/2020/08/29/vtree.html">&lt;p&gt;When I start the analysis of a new dataset, the first step is often to understand the relationships
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://tomsing1.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://tomsing1.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-08-29T23:22:43-05:00</updated><id>https://tomsing1.github.io/blog/feed.xml</id><title type="html">Thomas Sandmann’s blog</title><entry><title type="html">vtree: Visualizing nested relationships</title><link href="https://tomsing1.github.io/blog/r/2020/08/29/vtree.html" rel="alternate" type="text/html" title="vtree: Visualizing nested relationships" /><published>2020-08-29T00:00:00-05:00</published><updated>2020-08-29T00:00:00-05:00</updated><id>https://tomsing1.github.io/blog/r/2020/08/29/vtree</id><content type="html" xml:base="https://tomsing1.github.io/blog/r/2020/08/29/vtree.html">&lt;p&gt;When I start the analysis of a new dataset, the first step is often to understand the relationships
 between the samples / subjects and observations within in it.&lt;/p&gt;
 
 &lt;p&gt;The &lt;a href=&quot;https://github.com/ddsjoberg/gtsummary&quot;&gt;gtsummary&lt;/a&gt; R package is my go-to option for creating overview tables. 
@@ -37,7 +37,12 @@ in each &lt;code class=&quot;highlighter-rouge&quot;&gt;Class&lt;/code&gt; and t
   &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gtsummary&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tbl_summary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;by&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Class&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;tbl_summary_example.png&quot; alt=&quot;tbl_summary example&quot; /&gt;&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img class=&quot;image&quot; srcset=&quot;/images/tbl_summary_example.png 2w&quot; sizes=&quot;1px&quot; src=&quot;/images/tbl_summary_example.png&quot; /&gt;
+  
+  &lt;figcaption class=&quot;image-caption&quot;&gt;tbl_summary example output&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
 
 &lt;p&gt;This table highlights that there are nested relationships, e.g. you might be interested
 in the survival of adult female passengers traveling with a first-class ticket only.&lt;/p&gt;
@@ -53,7 +58,12 @@ which displays information about nested subsets of a data frame.&lt;/p&gt;
   &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vtree&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Class Sex Age&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;summary&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Survived=Yes \n%pct% survived&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;vtree_example.png&quot; alt=&quot;vtree example output&quot; /&gt;&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img class=&quot;image&quot; srcset=&quot;/images/vtree_example.png 2w&quot; sizes=&quot;1px&quot; src=&quot;/images/vtree_example.png&quot; /&gt;
+  
+  &lt;figcaption class=&quot;image-caption&quot;&gt;vtree example output&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
 
 &lt;p&gt;The &lt;a href=&quot;https://cran.r-project.org/web/packages/vtree/vignettes/vtree.html&quot;&gt;vtree vignette&lt;/a&gt; 
 is incredibly detailed and highlights how to control
