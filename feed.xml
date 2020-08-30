@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://tomsing1.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://tomsing1.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-08-30T00:00:47-05:00</updated><id>https://tomsing1.github.io/blog/feed.xml</id><title type="html">Thomas Sandmann’s blog</title><entry><title type="html">vtree: Visualizing nested relationships</title><link href="https://tomsing1.github.io/blog/r/2020/08/29/vtree.html" rel="alternate" type="text/html" title="vtree: Visualizing nested relationships" /><published>2020-08-29T00:00:00-05:00</published><updated>2020-08-29T00:00:00-05:00</updated><id>https://tomsing1.github.io/blog/r/2020/08/29/vtree</id><content type="html" xml:base="https://tomsing1.github.io/blog/r/2020/08/29/vtree.html">&lt;p&gt;When I start the analysis of a new dataset, the first step is often to understand the relationships
-between the samples / subjects and observations within in it.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://tomsing1.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://tomsing1.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-08-30T09:56:28-05:00</updated><id>https://tomsing1.github.io/blog/feed.xml</id><title type="html">Thomas Sandmann’s blog</title><entry><title type="html">vtree: Visualizing nested relationships</title><link href="https://tomsing1.github.io/blog/r/2020/08/29/vtree.html" rel="alternate" type="text/html" title="vtree: Visualizing nested relationships" /><published>2020-08-29T00:00:00-05:00</published><updated>2020-08-29T00:00:00-05:00</updated><id>https://tomsing1.github.io/blog/r/2020/08/29/vtree</id><content type="html" xml:base="https://tomsing1.github.io/blog/r/2020/08/29/vtree.html">&lt;p&gt;When I start the analysis of a new dataset, the first step is often to understand the relationships
+between the samples, subjects and observations within in it.&lt;/p&gt;
 
 &lt;p&gt;The &lt;a href=&quot;https://github.com/ddsjoberg/gtsummary&quot;&gt;gtsummary&lt;/a&gt; R package is my go-to option for creating overview tables. 
 Here is a quick overview of the surival rates of the &lt;code class=&quot;highlighter-rouge&quot;&gt;Titanic&lt;/code&gt; shipwreck.&lt;/p&gt;
@@ -37,14 +37,7 @@ in each &lt;code class=&quot;highlighter-rouge&quot;&gt;Class&lt;/code&gt; and t
   &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gtsummary&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tbl_summary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;by&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Class&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;/blog/images/logo.png&quot; alt=&quot;&quot; title=&quot;fast.ai's logo&quot; /&gt;&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;image&quot; srcset=&quot;/images/tbl_summary_example.png 2w&quot; sizes=&quot;1px&quot; src=&quot;/images/tbl_summary_example.png&quot; /&gt;
-  
-  &lt;figcaption class=&quot;image-caption&quot;&gt;tbl_summary example output&lt;/figcaption&gt;
-  
-&lt;/figure&gt;
+&lt;p&gt;&lt;img src=&quot;/blog/images/tbl_summary_example.png&quot; alt=&quot;&quot; title=&quot;tbl_summary example output&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;This table highlights that there are nested relationships, e.g. you might be interested
 in the survival of adult female passengers traveling with a first-class ticket only.&lt;/p&gt;
@@ -60,12 +53,7 @@ which displays information about nested subsets of a data frame.&lt;/p&gt;
   &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vtree&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Class Sex Age&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;summary&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Survived=Yes \n%pct% survived&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;figure&gt;
-  &lt;img class=&quot;image&quot; srcset=&quot;/images/vtree_example.png 2w&quot; sizes=&quot;1px&quot; src=&quot;/images/vtree_example.png&quot; /&gt;
-  
-  &lt;figcaption class=&quot;image-caption&quot;&gt;vtree example output&lt;/figcaption&gt;
-  
-&lt;/figure&gt;
+&lt;p&gt;&lt;img src=&quot;/blog/images/vtree_example.png&quot; alt=&quot;&quot; title=&quot;vtree example output&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The &lt;a href=&quot;https://cran.r-project.org/web/packages/vtree/vignettes/vtree.html&quot;&gt;vtree vignette&lt;/a&gt; 
 is incredibly detailed and highlights how to control
@@ -116,7 +104,7 @@ etc.&lt;/p&gt;
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;titanic&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
   &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vtree&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Class Sex Age&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;summary&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Survived=Yes \n%pct% survived&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
         &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sameline&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;TRUE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">When I start the analysis of a new dataset, the first step is often to understand the relationships between the samples / subjects and observations within in it.</summary></entry><entry><title type="html">Communicating information through heatmaps</title><link href="https://tomsing1.github.io/blog/r/2020/08/28/heatmaps.html" rel="alternate" type="text/html" title="Communicating information through heatmaps" /><published>2020-08-28T00:00:00-05:00</published><updated>2020-08-28T00:00:00-05:00</updated><id>https://tomsing1.github.io/blog/r/2020/08/28/heatmaps</id><content type="html" xml:base="https://tomsing1.github.io/blog/r/2020/08/28/heatmaps.html">&lt;p&gt;When you have lots of measurements for lots of samples, heatmaps can be a great way to communicate the patterns you have observed.
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">When I start the analysis of a new dataset, the first step is often to understand the relationships between the samples, subjects and observations within in it.</summary></entry><entry><title type="html">Communicating information through heatmaps</title><link href="https://tomsing1.github.io/blog/r/2020/08/28/heatmaps.html" rel="alternate" type="text/html" title="Communicating information through heatmaps" /><published>2020-08-28T00:00:00-05:00</published><updated>2020-08-28T00:00:00-05:00</updated><id>https://tomsing1.github.io/blog/r/2020/08/28/heatmaps</id><content type="html" xml:base="https://tomsing1.github.io/blog/r/2020/08/28/heatmaps.html">&lt;p&gt;When you have lots of measurements for lots of samples, heatmaps can be a great way to communicate the patterns you have observed.
 And if you have additional information about your samples, e.g. treatment groups, genotypes, age, etc, the &lt;a href=&quot;https://jokergoo.github.io/ComplexHeatmap-reference/book/&quot;&gt;ComplexHeatmap&lt;/a&gt; package offers options to display them at the same time.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://twitter.com/kevinblighe/status/1263308041270833152?s=12&quot;&gt;Kevin Blighe&lt;/a&gt; shared &lt;a href=&quot;https://github.com/kevinblighe/E-MTAB-6141&quot;&gt;the code he used to create heatmaps in recent publications&lt;/a&gt;, including step-by-step instructions:&lt;/p&gt;

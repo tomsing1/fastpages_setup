@@ -110,7 +110,7 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <p>When I start the analysis of a new dataset, the first step is often to understand the relationships
-between the samples / subjects and observations within in it.</p>
+between the samples, subjects and observations within in it.</p>
 
 <p>The <a href="https://github.com/ddsjoberg/gtsummary">gtsummary</a> R package is my go-to option for creating overview tables. 
 Here is a quick overview of the surival rates of the <code class="highlighter-rouge">Titanic</code> shipwreck.</p>
@@ -148,14 +148,7 @@ in each <code class="highlighter-rouge">Class</code> and their survival rates.</
   </span><span class="n">gtsummary</span><span class="o">::</span><span class="n">tbl_summary</span><span class="p">(</span><span class="n">by</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"Class"</span><span class="p">))</span><span class="w">
 </span></code></pre></div></div>
 
-<p><img src="/blog/images/logo.png" alt="" title="fast.ai's logo" /></p>
-
-<figure>
-  <img class="image" srcset="/images/tbl_summary_example.png 2w" sizes="1px" src="/images/tbl_summary_example.png" />
-  
-  <figcaption class="image-caption">tbl_summary example output</figcaption>
-  
-</figure>
+<p><img src="/blog/images/tbl_summary_example.png" alt="" title="tbl_summary example output" /></p>
 
 <p>This table highlights that there are nested relationships, e.g. you might be interested
 in the survival of adult female passengers traveling with a first-class ticket only.</p>
@@ -171,12 +164,7 @@ which displays information about nested subsets of a data frame.</p>
   </span><span class="n">vtree</span><span class="p">(</span><span class="s2">"Class Sex Age"</span><span class="p">,</span><span class="w"> </span><span class="n">summary</span><span class="o">=</span><span class="s2">"Survived=Yes \n%pct% survived"</span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
 
-<figure>
-  <img class="image" srcset="/images/vtree_example.png 2w" sizes="1px" src="/images/vtree_example.png" />
-  
-  <figcaption class="image-caption">vtree example output</figcaption>
-  
-</figure>
+<p><img src="/blog/images/vtree_example.png" alt="" title="vtree example output" /></p>
 
 <p>The <a href="https://cran.r-project.org/web/packages/vtree/vignettes/vtree.html">vtree vignette</a> 
 is incredibly detailed and highlights how to control
