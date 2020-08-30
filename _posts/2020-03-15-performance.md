@@ -1,4 +1,12 @@
-# Assessing regression models in R
+---
+title: "Assessing regression models in R"
+layout: post
+toc: false
+comments: true
+hide: false
+search_exclude: true
+categories: [r]
+---
 
 R has unmatched abilities to fit, examine and visualize statistical models.
 
