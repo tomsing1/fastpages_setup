@@ -124,7 +124,7 @@ Here is a quick overview of the surival rates of the <code class="highlighter-ro
 
 <p>The <code class="highlighter-rouge">titanic</code> data.frame holds 2201 rows, one for each passenger,
 and lists each subject ticket <code class="highlighter-rouge">Class</code>, their <code class="highlighter-rouge">Sex</code> and <code class="highlighter-rouge">Age</code> and whether they
-survived the shipwreck:</p>
+survived the shipwreck.</p>
 
 <p>We start with a data.frame that has one row for each observation, and provides
 information about the <em>variables</em> in separate columns.</p>
@@ -142,7 +142,7 @@ information about the <em>variables</em> in separate columns.</p>
 </code></pre></div></div>
 
 <p>The <code class="highlighter-rouge">tbl_summary</code> function provides a quick overview of the number of passengers 
-in each <code class="highlighter-rouge">Class</code> and their survival rates:</p>
+in each <code class="highlighter-rouge">Class</code> and their survival rates.</p>
 
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">titanic</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
   </span><span class="n">gtsummary</span><span class="o">::</span><span class="n">tbl_summary</span><span class="p">(</span><span class="n">by</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"Class"</span><span class="p">))</span><span class="w">
