@@ -1,0 +1,19 @@
+<h1 id="assessing-regression-models-in-r">Assessing regression models in R</h1>
+
+<p>R has unmatched abilities to fit, examine and visualize statistical models.</p>
+
+<p>Today, I noticed the <a href="https://easystats.github.io/performance/index.html">performance R package</a>, which provides a unified interface to assess model fit and quality for many different regression models.</p>
+
+<p>It is part of a growing set of packages under the <a href="https://easystats.github.io/blog/posts/">easystats</a> umbrella - a suite of R packages designed to make the use of advanced statistical techniques easy.</p>
+
+<p><code class="highlighter-rouge">performance</code> includes functions to report many different metrics, including various flavours of <code class="highlighter-rouge">R-squared</code>, <code class="highlighter-rouge">Intraclass Correlation Coefficients</code> (ICC) as well as checks for violations of assumptions such as <code class="highlighter-rouge">overdispersion</code>, <code class="highlighter-rouge">zero-inflation</code> or <code class="highlighter-rouge">singular model fits</code>.</p>
+
+<p>And if you are looking for a one-stop-shop, search no more:</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">model</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">lm</span><span class="p">(</span><span class="n">mpg</span><span class="w"> </span><span class="o">~</span><span class="w"> </span><span class="n">wt</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">cyl</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">gear</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mtcars</span><span class="p">)</span><span class="w">
+</span><span class="n">check_model</span><span class="p">(</span><span class="n">model</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p><img src="https://easystats.github.io/performance/reference/figures/unnamed-chunk-13-1.png" alt="Comprehensive model assessment plot" /></p>
+
+<p>Check out the <a href="https://easystats.github.io/performance/index.html">performance package’s website</a> to learn more!</p>
