@@ -14,7 +14,7 @@
       "page1": {
           "title": "About Me",
           "content": "Personal blog of Thomas Sandmann, a Computational Biologist working at Denali Therapeutics in South San Francisco, California, USA 1. . I am passionate and opinionated about many things, including neuroscience, oncology, drug discovery, genetics, teaching, and learning new things. Oh, and cats 🐈. . If you are curious about my work, check out my Google Scholar profile. . The opinions expressed here are solely my own and do not express the views or opinions of my employer . &#8617; . |",
-          "url": "https://tomsing1.github.io/about/",
+          "url": "https://tomsing1.github.io/blog/about/",
           "relUrl": "/about/",
           "date": ""
       }
@@ -46,7 +46,7 @@
       ,"page10": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
-          "url": "https://tomsing1.github.io/robots.txt",
+          "url": "https://tomsing1.github.io/blog/robots.txt",
           "relUrl": "/robots.txt",
           "date": ""
       }
