@@ -3,6 +3,17 @@
     
   
     
+        "post1": {
+            "title": "Diving into python (again)",
+            "content": "When I first started to use computational methods as a PhD student, python was the first programming language I learned. I loved both it’s clear syntax and the philosophy behind it. More recently, I have mainly been using R for my analyses, but still return to python e.g. to write multi-step workflows e.g. using Snakemake or Luigi. . In 2018, I had a chance to attend the fastai course taught by Jeremy Howard at the University of San Francisco. It was a great introduction into the field, but unfortunately I didn’t find the time to dive more deeply into it. Luckily, the fastai team just published much of their material as a book and also made the underlying Jupyter notebooks available. Time for another deep dive into neural networks, python, Jupyter notebooks, Numpy an more! . First, I needed to remind myself of a few features of python, e.g. the different types of methods used in object oriented programming or how to use the relatively recent pathlib standard module. . Here are a few online resources I found helpful: . Python . Virtual environments | Instance, class and static methods | Paths in python &gt;= 3.4 and this handy cheat sheet | Python string formatting | . Working in Jupyter . Jupyter debugger | . Numpy . Indexing arrays | Axes | . Matplotlib . Tutorial A Figure object is the outermost container for a matplotlib graphic, which can contain multiple Axes objects. One source of confusion is the name: an Axes actually translates into what we think of as an individual plot or graph. . | . Graphviz . Examples | .",
+            "url": "https://tomsing1.github.io/blog/python/fastai/2020/11/07/python.html",
+            "relUrl": "/python/fastai/2020/11/07/python.html",
+            "date": " • Nov 7, 2020"
+        }
+        
+    
+  
+    
   
     
   
@@ -13,7 +24,7 @@
   
 
   
-      "page1": {
+      ,"page1": {
           "title": "About Me",
           "content": "Personal blog of Thomas Sandmann, a Computational Biologist working at Denali Therapeutics in South San Francisco, California, USA 1. . I am passionate and opinionated about many things, including neuroscience, oncology, drug discovery, genetics, teaching, and learning new things. Oh, and cats 🐈. . If you are curious about my work, check out my Google Scholar profile. . The opinions expressed here are solely my own and do not express the views or opinions of my employer . &#8617; . |",
           "url": "https://tomsing1.github.io/blog/about/",

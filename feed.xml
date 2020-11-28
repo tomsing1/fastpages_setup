@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://tomsing1.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://tomsing1.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-11-28T17:16:26-06:00</updated><id>https://tomsing1.github.io/blog/feed.xml</id><title type="html">Thomas Sandmann’s blog</title><entry><title type="html">Hierarchical multiple testing</title><link href="https://tomsing1.github.io/blog/r/2020/11/08/Hierarchical_multiple_testing.html" rel="alternate" type="text/html" title="Hierarchical multiple testing" /><published>2020-11-08T00:00:00-06:00</published><updated>2020-11-08T00:00:00-06:00</updated><id>https://tomsing1.github.io/blog/r/2020/11/08/Hierarchical_multiple_testing</id><content type="html" xml:base="https://tomsing1.github.io/blog/r/2020/11/08/Hierarchical_multiple_testing.html">&lt;p&gt;I was first introduced to the &lt;em&gt;multiple testing problem&lt;/em&gt; when I conducted microarray gene expression analyses, quite some time ago. This concept was tricky for me to understand at first, and I have had many conversations with collaborators around p-values, adjusted p-values and false discovery rates since.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://tomsing1.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://tomsing1.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-11-28T17:17:18-06:00</updated><id>https://tomsing1.github.io/blog/feed.xml</id><title type="html">Thomas Sandmann’s blog</title><entry><title type="html">Hierarchical multiple testing</title><link href="https://tomsing1.github.io/blog/r/2020/11/08/Hierarchical_multiple_testing.html" rel="alternate" type="text/html" title="Hierarchical multiple testing" /><published>2020-11-08T00:00:00-06:00</published><updated>2020-11-08T00:00:00-06:00</updated><id>https://tomsing1.github.io/blog/r/2020/11/08/Hierarchical_multiple_testing</id><content type="html" xml:base="https://tomsing1.github.io/blog/r/2020/11/08/Hierarchical_multiple_testing.html">&lt;p&gt;I was first introduced to the &lt;em&gt;multiple testing problem&lt;/em&gt; when I conducted microarray gene expression analyses, quite some time ago. This concept was tricky for me to understand at first, and I have had many conversations with collaborators around p-values, adjusted p-values and false discovery rates since.&lt;/p&gt;
 
 &lt;p&gt;The book &lt;a href=&quot;https://www.huber.embl.de/msmb/index.html&quot;&gt;Modern Statistics for Modern Biology&lt;/a&gt; by Susan Holmes and Wolfgang Huber provides a great introduction to the topic in its chapter on &lt;a href=&quot;https://www.huber.embl.de/msmb/Chap-Testing.html&quot;&gt;Testing&lt;/a&gt;, including a hat tip to XKCD’s famous &lt;a href=&quot;https://imgs.xkcd.com/comics/significant.png&quot;&gt;Jelly bean cartoon&lt;/a&gt;&lt;/p&gt;
 
@@ -8,7 +8,54 @@
 
 &lt;p&gt;Kris Sankaran’s and Susan Holmes’ 2014 paper on the &lt;a href=&quot;https://cran.r-project.org/web/packages/structSSI/index.html&quot;&gt;structSSI R package&lt;/a&gt; in the &lt;a href=&quot;https://www.jstatsoft.org/article/view/v059i13&quot;&gt;Journal of Statistical Software&lt;/a&gt; provides a great, very readable summary of several approaches, together with a software implementation of the group Benjamini-Hochberg (GBH) procedure of &lt;a href=&quot;https://www.tandfonline.com/doi/abs/10.1198/jasa.2010.tm09329&quot;&gt;Hu, Zhao, and Zhou (2010)&lt;/a&gt; and the hierarchical false discovery rate (HFDR) controlling procedure of &lt;a href=&quot;https://www.researchgate.net/publication/246367725_Hierarchical_FDR_testing_of_trees_of_hypotheses&quot;&gt;Benjamini and Yekutieli (2003)&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Highly recommended!&lt;/p&gt;</content><author><name></name></author><summary type="html">I was first introduced to the multiple testing problem when I conducted microarray gene expression analyses, quite some time ago. This concept was tricky for me to understand at first, and I have had many conversations with collaborators around p-values, adjusted p-values and false discovery rates since.</summary></entry><entry><title type="html">vtree: Visualizing nested relationships</title><link href="https://tomsing1.github.io/blog/r/2020/08/29/vtree.html" rel="alternate" type="text/html" title="vtree: Visualizing nested relationships" /><published>2020-08-29T00:00:00-05:00</published><updated>2020-08-29T00:00:00-05:00</updated><id>https://tomsing1.github.io/blog/r/2020/08/29/vtree</id><content type="html" xml:base="https://tomsing1.github.io/blog/r/2020/08/29/vtree.html">&lt;p&gt;When I start the analysis of a new dataset, the first step is often to understand the relationships
+&lt;p&gt;Highly recommended!&lt;/p&gt;</content><author><name></name></author><summary type="html">I was first introduced to the multiple testing problem when I conducted microarray gene expression analyses, quite some time ago. This concept was tricky for me to understand at first, and I have had many conversations with collaborators around p-values, adjusted p-values and false discovery rates since.</summary></entry><entry><title type="html">Diving into python (again)</title><link href="https://tomsing1.github.io/blog/python/fastai/2020/11/07/python.html" rel="alternate" type="text/html" title="Diving into python (again)" /><published>2020-11-07T00:00:00-06:00</published><updated>2020-11-07T00:00:00-06:00</updated><id>https://tomsing1.github.io/blog/python/fastai/2020/11/07/python</id><content type="html" xml:base="https://tomsing1.github.io/blog/python/fastai/2020/11/07/python.html">&lt;p&gt;When I first started to use computational methods as a PhD student, python was the first programming language I learned. I loved both it’s clear syntax and the philosophy behind it. More recently, I have mainly been using R for my analyses, but still return to python e.g. to write multi-step workflows e.g. using &lt;a href=&quot;https://snakemake.github.io/&quot;&gt;Snakemake&lt;/a&gt; or &lt;a href=&quot;https://luigi.readthedocs.io/en/stable/index.html&quot;&gt;Luigi&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In 2018, I had a chance to attend the &lt;a href=&quot;https://course.fast.ai/&quot;&gt;fastai&lt;/a&gt; course taught by Jeremy Howard at the University of San Francisco. It was a great introduction into the field, but unfortunately I didn’t find the time to dive more deeply into it. Luckily, the fastai team just published much of their material as a &lt;a href=&quot;https://www.amazon.com/Deep-Learning-Coders-fastai-PyTorch/dp/1492045527&quot;&gt;book&lt;/a&gt; and also
+made the underlying &lt;a href=&quot;https://github.com/fastai/fastbook&quot;&gt;Jupyter notebooks&lt;/a&gt; available. Time for another deep dive into neural networks, python, Jupyter notebooks, Numpy an more!&lt;/p&gt;
+
+&lt;p&gt;First, I needed to remind myself of a few features of python, e.g. the different types of methods used in object oriented programming or how to use the relatively recent &lt;a href=&quot;https://docs.python.org/3/library/pathlib.html&quot;&gt;pathlib&lt;/a&gt; standard module.&lt;/p&gt;
+
+&lt;p&gt;Here are a few online resources I found helpful:&lt;/p&gt;
+
+&lt;h2 id=&quot;python&quot;&gt;Python&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://realpython.com/python-virtual-environments-a-primer/&quot;&gt;Virtual environments&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://realpython.com/instance-class-and-static-methods-demystified/&quot;&gt;Instance, class and static methods&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://realpython.com/python-pathlib/&quot;&gt;Paths in python &amp;gt;= 3.4&lt;/a&gt; and this &lt;a href=&quot;https://github.com/chris1610/pbpython/blob/master/extras/Pathlib-Cheatsheet.pdf&quot;&gt;handy cheat sheet&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://realpython.com/python-string-formatting/&quot;&gt;Python string formatting&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;working-in-jupyter&quot;&gt;Working in &lt;a href=&quot;https://jupyter.org/&quot;&gt;Jupyter&lt;/a&gt;&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/jupyterlab/debugger&quot;&gt;Jupyter debugger&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;numpy&quot;&gt;Numpy&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://numpy.org/doc/stable/reference/arrays.indexing.html#arrays-indexing&quot;&gt;Indexing arrays&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://aerinykim.medium.com/numpy-sum-axis-intuition-6eb94926a5d1&quot;&gt;Axes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;matplotlib&quot;&gt;Matplotlib&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://realpython.com/python-matplotlib-guide/&quot;&gt;Tutorial&lt;/a&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;A Figure object is the outermost container for a matplotlib graphic, which can contain 
+multiple Axes objects. One source of confusion is the name: an &lt;code class=&quot;highlighter-rouge&quot;&gt;Axe&lt;/code&gt;s actually 
+translates into what we think of as an individual plot or graph.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;graphviz&quot;&gt;Graphviz&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.tonyballantyne.com/graphs.html&quot;&gt;Examples&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">When I first started to use computational methods as a PhD student, python was the first programming language I learned. I loved both it’s clear syntax and the philosophy behind it. More recently, I have mainly been using R for my analyses, but still return to python e.g. to write multi-step workflows e.g. using Snakemake or Luigi.</summary></entry><entry><title type="html">vtree: Visualizing nested relationships</title><link href="https://tomsing1.github.io/blog/r/2020/08/29/vtree.html" rel="alternate" type="text/html" title="vtree: Visualizing nested relationships" /><published>2020-08-29T00:00:00-05:00</published><updated>2020-08-29T00:00:00-05:00</updated><id>https://tomsing1.github.io/blog/r/2020/08/29/vtree</id><content type="html" xml:base="https://tomsing1.github.io/blog/r/2020/08/29/vtree.html">&lt;p&gt;When I start the analysis of a new dataset, the first step is often to understand the relationships
 between the samples, subjects and observations within in it.&lt;/p&gt;
 
 &lt;p&gt;The &lt;a href=&quot;https://github.com/ddsjoberg/gtsummary&quot;&gt;gtsummary&lt;/a&gt; R package is my go-to option for creating overview tables. 
