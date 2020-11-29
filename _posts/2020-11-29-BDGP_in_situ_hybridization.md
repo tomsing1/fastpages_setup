@@ -61,6 +61,8 @@ The images have been made available publicly, e.g. via [this site](https://insit
 Other researchers have used this resource and implemented machine learning models, e.g.
 
 - [Automated annotation of developmental stages of Drosophila embryos](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3892688/)
+- [AnnoFly: annotating Drosophila embryonic images based on an attention-enhanced RNN model](https://academic.oup.com/bioinformatics/article-abstract/35/16/2834/5270662?redirectedFrom=fulltext)
+- [Deep Low-Shot Learning for Biological Image Classification](https://www.groundai.com/project/deep-low-shot-learning-for-biological-image-classification-and-visualization-from-limited-training-samples/1)
 
 Unfortunately, the FTP server requires a login/password, which is not provided on the page. The [contacts](https://insitu.fruitfly.org/cgi-bin/ex/insitu.pl?t=html&p=contact_us) form seems to be broken (not surprising for a website of a research project conducted more than 10 years ago).
 
