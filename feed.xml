@@ -1,4 +1,76 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://tomsing1.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://tomsing1.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-11-28T17:17:18-06:00</updated><id>https://tomsing1.github.io/blog/feed.xml</id><title type="html">Thomas Sandmann’s blog</title><entry><title type="html">Hierarchical multiple testing</title><link href="https://tomsing1.github.io/blog/r/2020/11/08/Hierarchical_multiple_testing.html" rel="alternate" type="text/html" title="Hierarchical multiple testing" /><published>2020-11-08T00:00:00-06:00</published><updated>2020-11-08T00:00:00-06:00</updated><id>https://tomsing1.github.io/blog/r/2020/11/08/Hierarchical_multiple_testing</id><content type="html" xml:base="https://tomsing1.github.io/blog/r/2020/11/08/Hierarchical_multiple_testing.html">&lt;p&gt;I was first introduced to the &lt;em&gt;multiple testing problem&lt;/em&gt; when I conducted microarray gene expression analyses, quite some time ago. This concept was tricky for me to understand at first, and I have had many conversations with collaborators around p-values, adjusted p-values and false discovery rates since.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://tomsing1.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://tomsing1.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-11-29T15:59:40-06:00</updated><id>https://tomsing1.github.io/blog/feed.xml</id><title type="html">Thomas Sandmann’s blog</title><entry><title type="html">Fastai: Drosophila embryogenesis</title><link href="https://tomsing1.github.io/blog/fastai/fruitflies/2020/11/29/BDGP_in_situ_hybridization.html" rel="alternate" type="text/html" title="Fastai: Drosophila embryogenesis" /><published>2020-11-29T00:00:00-06:00</published><updated>2020-11-29T00:00:00-06:00</updated><id>https://tomsing1.github.io/blog/fastai/fruitflies/2020/11/29/BDGP_in_situ_hybridization</id><content type="html" xml:base="https://tomsing1.github.io/blog/fastai/fruitflies/2020/11/29/BDGP_in_situ_hybridization.html">&lt;p&gt;To learn more about &lt;em&gt;deep learning&lt;/em&gt; methods, I have begun working through the
+&lt;a href=&quot;https://github.com/fastai/fastbook&quot;&gt;fastai book&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;As always, the best way for me to learn is to dive into a small project of my own - an attitude strongly supported by the fastai authors.&lt;/p&gt;
+
+&lt;p&gt;The book uses &lt;a href=&quot;https://github.com/fastai/fastbook/blob/master/01_intro.ipynb&quot;&gt;image classification&lt;/a&gt; as an example, so I decided to look for a suitable image analysis project to help me learn.&lt;/p&gt;
+
+&lt;p&gt;Years ago, I studied the development of the &lt;a href=&quot;https://en.wikipedia.org/wiki/Drosophila_melanogaster&quot;&gt;fruitfly&lt;/a&gt; , especially the formation of its muscle system during embryogenesis.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/9/95/Drosophila_melanogaster_Proboscis.jpg&quot; alt=&quot;Fruit fly&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;So I decided to return to my scientific roots and explore images of fruitfly embryogenesis.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-bdgp-project&quot;&gt;The BDGP project&lt;/h2&gt;
+
+&lt;p&gt;In 2009 the &lt;a href=&quot;https://insitu.fruitfly.org/cgi-bin/ex/insitu.pl&quot;&gt;Berkeley Drosophila Genome Project&lt;/a&gt; documented the expression patterns of most fruitfly genes using &lt;em&gt;in situ&lt;/em&gt; hybridization. The researcherstook a large number of digital images of individual embryos, each stained with a specific probe to highlight the transcripts of one gene.&lt;/p&gt;
+
+&lt;p&gt;In total, the &lt;a href=&quot;https://insitu.fruitfly.org/cgi-bin/ex/insitu.pl&quot;&gt;BDGP project&lt;/a&gt; examined 8532 genes and documented them with 140427 digital photographs.&lt;/p&gt;
+
+&lt;p&gt;Embryonic development takes about 22 hours and has been subdivided into separate stages discernable under the microscope.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://embryology.med.unsw.edu.au/embryology/images/thumb/e/ec/Drosophila_table.JPG/550px-Drosophila_table.JPG&quot; alt=&quot;Drosophila embryogenesis stages&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here is the expression of one gene, Ecdysone-inducible gene L2 (* ImpL2*) at 
+&lt;a href=&quot;&quot;&gt;stage 7&lt;/a&gt; of development, for example:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://insitu.fruitfly.org/insitu_image_storage/img_dir_10/insitu10383.jpe&quot; alt=&quot;ImpL2 expression&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Gene expression is dynamic, e.g. it changes over time as the embryo develops. To see how &lt;em&gt;ImpL2&lt;/em&gt; changes over time, check out the &lt;a href=&quot;https://insitu.fruitfly.org/cgi-bin/ex/report.pl?ftype=3&amp;amp;ftext=SD07266&quot;&gt;BDGP’s full report&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;After staining and imaging a large number of fruitfly embryos (&lt;a href=&quot;https://pubmed.ncbi.nlm.nih.gov/19360017/&quot;&gt;Weiszmann et al, 2009&lt;/a&gt;), the researchers carefully&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Identified single embryos in the field of view, and cropped the image accordingly.&lt;/li&gt;
+  &lt;li&gt;Oriented each image so that the anterior end of the embryo faced left.&lt;/li&gt;
+  &lt;li&gt;Assigned a developmental stage.&lt;/li&gt;
+  &lt;li&gt;Described the (often complex) expression patterns they observed using a &lt;a href=&quot;https://insitu.fruitfly.org/cgi-bin/ex/insitu.pl?t=html&amp;amp;p=annotation&quot;&gt;controlled vocabulary&lt;/a&gt; of anatomical terms.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Using this large image dataset, the BDGP project performed and published numerous analyses, e.g.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pubmed.ncbi.nlm.nih.gov/17645804/&quot;&gt;Global analysis of patterns of gene expression during Drosophila embryogenesis&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://www.ncbi.nlm.nih.gov/pmc/articles/instance/2323238/bin/gb-2007-8-7-r145-4.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pubmed.ncbi.nlm.nih.gov/20087342/&quot;&gt;Systematic image-driven analysis of the spatial Drosophila embryonic expression landscape&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pubmed.ncbi.nlm.nih.gov/18423206/&quot;&gt;A quantitative spatiotemporal atlas of gene expression in the Drosophila blastoderm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;and many more.&lt;/p&gt;
+
+&lt;p&gt;The images have been made available publicly, e.g. via &lt;a href=&quot;https://insitu.fruitfly.org/cgi-bin/ex/insitu.pl?t=html&amp;amp;p=downloads&quot;&gt;this site&lt;/a&gt; - 250 GB of image data in total.&lt;/p&gt;
+
+&lt;p&gt;Other researchers have used this resource and implemented machine learning models, e.g.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3892688/&quot;&gt;Automated annotation of developmental stages of Drosophila embryos&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Unfortunately, the FTP server requires a login/password, which is not provided on the page. The &lt;a href=&quot;https://insitu.fruitfly.org/cgi-bin/ex/insitu.pl?t=html&amp;amp;p=contact_us&quot;&gt;contacts&lt;/a&gt; form seems to be broken (not surprising for a website of a research project conducted more than 10 years ago).&lt;/p&gt;
+
+&lt;p&gt;I contaced &lt;a href=&quot;https://www.genetics.org/content/204/3/845&quot;&gt;Susan Celniker&lt;/a&gt;, a researcher at the Lawrence Berkeley National Laborator and key driver of the Drosophila genome / BDGP efforts to see if she could help me out 🤞🏻.&lt;/p&gt;
+
+&lt;h2 id=&quot;fly-fish&quot;&gt;Fly-FISH&lt;/h2&gt;
+
+&lt;p&gt;Another project used fluorescent microscopy to generate even higher resolution images of gene expression patterns during fruitfly embryogenesis: &lt;a href=&quot;http://fly-fish.ccbr.utoronto.ca/&quot;&gt;Fly-FISH&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The images have sub-cellular resolution and are beautiful:&lt;/p&gt;
+
+&lt;iframe width=&quot;400&quot; src=&quot;https://www.youtube.com/embed/ox27uj3fgcc&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name></name></author><summary type="html">To learn more about deep learning methods, I have begun working through the fastai book.</summary></entry><entry><title type="html">Hierarchical multiple testing</title><link href="https://tomsing1.github.io/blog/r/2020/11/08/Hierarchical_multiple_testing.html" rel="alternate" type="text/html" title="Hierarchical multiple testing" /><published>2020-11-08T00:00:00-06:00</published><updated>2020-11-08T00:00:00-06:00</updated><id>https://tomsing1.github.io/blog/r/2020/11/08/Hierarchical_multiple_testing</id><content type="html" xml:base="https://tomsing1.github.io/blog/r/2020/11/08/Hierarchical_multiple_testing.html">&lt;p&gt;I was first introduced to the &lt;em&gt;multiple testing problem&lt;/em&gt; when I conducted microarray gene expression analyses, quite some time ago. This concept was tricky for me to understand at first, and I have had many conversations with collaborators around p-values, adjusted p-values and false discovery rates since.&lt;/p&gt;
 
 &lt;p&gt;The book &lt;a href=&quot;https://www.huber.embl.de/msmb/index.html&quot;&gt;Modern Statistics for Modern Biology&lt;/a&gt; by Susan Holmes and Wolfgang Huber provides a great introduction to the topic in its chapter on &lt;a href=&quot;https://www.huber.embl.de/msmb/Chap-Testing.html&quot;&gt;Testing&lt;/a&gt;, including a hat tip to XKCD’s famous &lt;a href=&quot;https://imgs.xkcd.com/comics/significant.png&quot;&gt;Jelly bean cartoon&lt;/a&gt;&lt;/p&gt;
 
