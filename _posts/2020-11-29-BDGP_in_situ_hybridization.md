@@ -17,7 +17,7 @@ The book uses [image classification](https://github.com/fastai/fastbook/blob/mas
 
 Years ago, I studied the development of the [fruitfly](https://en.wikipedia.org/wiki/Drosophila_melanogaster) , especially the formation of its muscle system during embryogenesis.
 
-![Fruit fly](https://upload.wikimedia.org/wikipedia/commons/9/95/Drosophila_melanogaster_Proboscis.jpg)
+![Fruit fly](https://cdn.arstechnica.net/wp-content/uploads/2013/01/fruit_fly.jpg)
 
 So I decided to return to my scientific roots and explore images of fruitfly embryogenesis.
 
@@ -74,5 +74,5 @@ Another project used fluorescent microscopy to generate even higher resolution i
 
 The images have sub-cellular resolution and are beautiful:
 
-<iframe width="400" src="https://www.youtube.com/embed/ox27uj3fgcc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ox27uj3fgcc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
