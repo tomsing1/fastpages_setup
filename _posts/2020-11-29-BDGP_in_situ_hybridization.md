@@ -64,9 +64,14 @@ Other researchers have used this resource and implemented machine learning model
 - [AnnoFly: annotating Drosophila embryonic images based on an attention-enhanced RNN model](https://academic.oup.com/bioinformatics/article-abstract/35/16/2834/5270662?redirectedFrom=fulltext)
 - [Deep Low-Shot Learning for Biological Image Classification](https://www.groundai.com/project/deep-low-shot-learning-for-biological-image-classification-and-visualization-from-limited-training-samples/1)
 
-Unfortunately, the FTP server requires a login/password, which is not provided on the page. The [contacts](https://insitu.fruitfly.org/cgi-bin/ex/insitu.pl?t=html&p=contact_us) form seems to be broken (not surprising for a website of a research project conducted more than 10 years ago).
+<strike>Unfortunately, the FTP server requires a login/password, which is not provided on the page. The [contacts](https://insitu.fruitfly.org/cgi-bin/ex/insitu.pl?t=html&p=contact_us) form seems to be broken (not surprising for a website of a research project conducted more than 10 years ago).
 
 I contaced [Susan Celniker](https://www.genetics.org/content/204/3/845), a researcher at the Lawrence Berkeley National Laborator and key driver of the Drosophila genome / BDGP efforts to see if she could help me out 🤞🏻.
+</strike> 
+
+The BDGP FTP server is up serving anonmous requests without a login again! Thanks a lot, BDGP team!
+
+
 
 ## Fly-FISH
 
