@@ -263,6 +263,7 @@ and store it in this project's directory on gDrive.</p>
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nd">@lru_cache</span><span class="p">(</span><span class="n">maxsize</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">retrieve_image_metadata</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+  <span class="s2">"Load BDGP metadata from a local (cached) or remote CSV file"</span>
   <span class="n">server</span> <span class="o">=</span> <span class="s2">"https://insitu.fruitfly.org/"</span>
   <span class="k">if</span> <span class="n">path</span> <span class="ow">and</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Reading image metadata from cached file </span><span class="si">{</span><span class="n">path</span><span class="si">}</span><span class="s2">."</span><span class="p">)</span> 
@@ -276,7 +277,9 @@ and store it in this project's directory on gDrive.</p>
                          <span class="n">names</span><span class="o">=</span><span class="p">[</span><span class="s1">'id'</span><span class="p">,</span><span class="s1">'symbol'</span><span class="p">,</span> <span class="s1">'annotation_symbol'</span><span class="p">,</span>
                               <span class="s1">'FBgn'</span><span class="p">,</span> <span class="s1">'cDNA_clone'</span><span class="p">,</span> <span class="s1">'path'</span><span class="p">,</span> <span class="s1">'stage'</span><span class="p">,</span> <span class="s1">'pov'</span><span class="p">,</span>
                                <span class="s1">'comment'</span><span class="p">,</span> <span class="s1">'resolution'</span><span class="p">])</span>
-    <span class="n">images</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">path</span><span class="p">:</span>
+      <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Caching metadata as </span><span class="si">{</span><span class="n">path</span><span class="si">}</span><span class="s2">."</span><span class="p">)</span>
+      <span class="n">images</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
   <span class="n">images</span><span class="p">[</span><span class="s2">"stage"</span><span class="p">]</span> <span class="o">=</span> <span class="n">images</span><span class="p">[</span><span class="s2">"stage"</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">'category'</span><span class="p">)</span>
   <span class="n">images</span> <span class="o">=</span> <span class="n">images</span><span class="p">[</span><span class="n">images</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">notna</span><span class="p">()]</span>  
   <span class="k">return</span> <span class="n">images</span>
